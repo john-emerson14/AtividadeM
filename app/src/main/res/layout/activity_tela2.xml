@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/this_vegetables"
+    android:orientation="vertical"
+    tools:context=".tela2">
+
+    <TextView
+        android:id="@+id/usuario2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginRight="30dp"
+        android:gravity="center"
+        android:text="@string/nome_do_usuario"
+        android:textAllCaps="true"
+        android:textColor="@color/colorPrimary"
+        android:textSize="24sp"
+        android:textStyle="bold|italic" />
+
+    <EditText
+        android:id="@+id/edit_altura"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="10dp"
+        android:hint="@string/digite_sua_altura"
+        android:inputType="numberDecimal"
+        android:textColor="@color/colorPrimary"
+        android:textSize="24sp" />
+
+    <EditText
+        android:id="@+id/edit_peso"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:hint="@string/digite_seu_peso"
+        android:inputType="numberDecimal"
+        android:textColor="@color/colorPrimary"
+        android:textSize="24sp" />
+
+    <Button
+        android:id="@+id/btn_pronto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="50dp"
+        android:background="@color/colorPrimary"
+        android:onClick="pronto"
+        android:text="@string/pronto"
+        android:textColor="@android:color/background_light"
+        android:textSize="17sp" />
+
+</LinearLayout>

@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/TelaPrincipal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/this_vegetables"
+    android:orientation="vertical"
+    tools:context=".Main2Activity">
+
+    <TextView
+        android:id="@+id/usuario"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="30dp"
+        android:gravity="center"
+        android:text="@string/nome_do_usuario"
+        android:textAllCaps="true"
+        android:textColor="@color/colorPrimary"
+        android:textSize="24sp"
+        android:textStyle="bold|italic" />
+
+    <Button
+        android:id="@+id/btn_obter_dados"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@color/colorPrimary"
+        android:onClick="abrirTela2"
+        android:text="@string/inserir_dados"
+        android:textColor="@android:color/background_light"
+        android:textSize="17sp" />
+
+    <LinearLayout
+        android:id="@+id/layoutAltura"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:orientation="horizontal"
+        android:visibility="visible">
+
+        <TextView
+            android:id="@+id/txt_altura"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/altura"
+            android:textAllCaps="false"
+            android:textColor="@color/colorPrimary"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/altura"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textAllCaps="false"
+            android:textColor="#6E6E6E"
+            android:textSize="24sp"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/txt_peso"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/peso"
+            android:textAllCaps="false"
+            android:textColor="@color/colorPrimary"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/peso"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textAllCaps="false"
+            android:textColor="#6E6E6E"
+            android:textSize="24sp"
+            android:visibility="invisible" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layoutTMB"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/TMB_resultado"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="@color/colorPrimary"
+            android:textSize="40sp"
+            android:textStyle="italic"
+            android:visibility="invisible" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/selecione_tipo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:text="@string/selecione_seu_estilo_de_vida"
+        android:textAllCaps="false"
+        android:textColor="#6E6E6E"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:visibility="invisible" />
+
+    <RadioGroup
+        android:id="@+id/botoes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="invisible">
+
+        <RadioButton
+            android:id="@+id/btn_sedentario"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:onClick="onRadioButtonClicked"
+            android:text="@string/sedent_rio"
+            android:textColor="@color/colorPrimary"
+            android:textSize="24sp" />
+
+        <RadioButton
+            android:id="@+id/btn_leve_ativo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:onClick="onRadioButtonClicked"
+            android:text="@string/levemente_ativo"
+            android:textColor="@color/colorPrimary"
+            android:textSize="24sp" />
+
+        <RadioButton
+            android:id="@+id/btn_moder_ativo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:onClick="onRadioButtonClicked"
+            android:text="@string/moderadamente_ativo"
+            android:textColor="@color/colorPrimary"
+            android:textSize="24sp" />
+
+        <RadioButton
+            android:id="@+id/btn_muito_ativo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:onClick="onRadioButtonClicked"
+            android:text="@string/muito_ativo"
+            android:textColor="@color/colorPrimary"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/GET_resultado"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="@string/get_0_0"
+            android:textColor="@color/colorPrimary"
+            android:textSize="40sp"
+            android:textStyle="italic"
+            android:visibility="invisible" />
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/detalhar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@color/colorPrimary"
+        android:gravity="center"
+        android:onClick="abrirTela3"
+        android:text="detalhar"
+        android:textColor="@android:color/background_light"
+        android:textSize="17sp"
+        android:visibility="invisible" />
+
+</LinearLayout>

@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">App Nutrientes</string>
+    <string name="app_nutrientes">App Nutrientes</string>
+    <string name="digite_seu_nome">Digite seu nome</string>
+    <string name="nome_do_usuario">NOME DO USUARIO</string>
+    <string name="digite_sua_altura">Digite sua altura (em metros)</string>
+    <string name="digite_seu_peso">Digite seu peso (em quilos)</string>
+    <string name="inserir_dados">inserir dados</string>
+    <string name="pronto">pronto</string>
+    <string name="peso">Peso:</string>
+    <string name="altura">Altura:</string>
+    <string name="sedent_rio">Sedentário</string>
+    <string name="selecione_seu_estilo_de_vida">Selecione seu estilo de vida:</string>
+    <string name="levemente_ativo">Levemente Ativo</string>
+    <string name="moderadamente_ativo">Moderadamente Ativo</string>
+    <string name="muito_ativo">Muito Ativo</string>
+    <string name="prote_nas">Proteínas:</string>
+    <string name="carboidratos">Carboidratos:</string>
+    <string name="gorduras">Gorduras:</string>
+    <string name="get_x_kcal">GET = X kcal</string>
+    <string name="em_kcal">Em Kcal</string>
+    <string name="em_gramas">Em Gramas</string>
+    <string name="get_0_0">GET = 0.0</string>
+</resources>
